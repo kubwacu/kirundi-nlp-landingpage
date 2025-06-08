@@ -21,8 +21,8 @@ import CountUp from "react-countup";
 export const description = "A line chart showing article collection progress";
 
 export interface ArticleCount {
-  MonthYear: string;
-  Count: number;
+  month_year: string;
+  count: number;
 }
 
 interface ChartProps {
@@ -40,16 +40,18 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-export function ChartLineInteractive({ article_counts, total_articles }: ChartProps) {
-  // Transform the data to match the chart's expected format
+export function ChartLineInteractive({
+  article_counts,
+  total_articles,
+}: ChartProps) {
   const chartData = React.useMemo(() => {
-    return article_counts.map(item => {
-      const [month, year] = item.MonthYear.split("-");
-      // Create a date string in YYYY-MM-01 format
+    return article_counts.map((item) => {
+      const [month, year] = item.month_year.split("-");
+
       const date = `${year}-${month}-01`;
       return {
         date,
-        articles: item.Count
+        articles: item.count,
       };
     });
   }, [article_counts]);
