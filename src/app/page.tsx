@@ -3,7 +3,7 @@ import contributors from "@/data/contributors";
 import Link from "next/link";
 
 async function getOverviewData() {
-  const res = await fetch("http://localhost:8080/api/overview", { cache: 'no-store' });
+  const res = await fetch(process.env.NEXT_PUBLIC_OVERVIEW_API_URL as string, { cache: 'no-store' });
   if (!res.ok) {
     throw new Error('Failed to fetch overview data');
   }
