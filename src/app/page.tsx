@@ -31,8 +31,8 @@ export default async function Home() {
           <div className="mb-8">
             <h2 className="text-2xl font-bold mb-4 text-[#1B483D]">Mission</h2>
             <p className="text-lg text-gray-700 italic">
-              "To build the largest open-source Kirundi text dataset and the
-              first 100% Burundian-made Kirundi ↔ English translation model."
+              {`"To build the largest open-source Kirundi text dataset and the
+              first 100% Burundian-made Kirundi ↔ English translation model."`}
             </p>
           </div>
 
