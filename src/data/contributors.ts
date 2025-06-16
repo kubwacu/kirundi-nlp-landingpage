@@ -1,10 +1,10 @@
 const contributors = [
   {
-    name: "Huzaifa Nimushimirimana",
+    name: "Huzaifa NIMUSHIMIRIMANA",
     link: "https://www.linkedin.com/in/kalculata/",
   },
   {
-    name: "Lee Fleury Ntacorigira",
+    name: "Lee Fleury NTACORIGIRA",
     link: "https://www.linkedin.com/in/lee-fleury-ntacorigira-4a1057361",
   },
   {
@@ -31,6 +31,10 @@ const contributors = [
     name: "Béni Crébert BARANSEGETA",
     link: "https://www.linkedin.com/in/beni-crebert-baransegeta-35799822b"
   },
+  {
+    name: "Robert Niyonzima",
+    link: "https://www.linkedin.com/in/robert-niyonzima-aab409355/"
+  }
 ];
 
 export default contributors;
